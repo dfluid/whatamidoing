@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<title>Computer Music Seminar</title>
+<link rel="stylesheet" href="style.css">
+<body>
+    
+    <div id="main-content" align="center">
+        <h1>Computer Music Seminar</h1>
+        
+        <img width="200" height="150"
+            src="images/tereshkova.png"
+            onmousedown="document.getElementById('my80s').play()"
+            onmouseup="document.getElementById('my80s').pause()" />
+
+        <img width="200" height="150"
+            src="images/ms20.jpg"
+            onmousedown="document.getElementById('deepspace').play()"
+            onmouseup="document.getElementById('deepspace').pause()" />
+
+        <img width="200" height="150"
+            src="images/arp.png"
+            onmousedown="document.getElementById('defcon').play()"
+            onmouseup="document.getElementById('defcon').pause()" />
+
+
+        <audio id="my80s" src="http://ice1.somafm.com/u80s-128-aac"></audio>
+        <audio id="deepspace" src="http://ice1.somafm.com/deepspaceone"></audio>
+        <audio id="defcon" src="http://ice1.somafm.com/defcon"></audio>
+
+        <a href="gol.html"><img src="https://cdn2.vectorstock.com/i/1000x1000/05/11/man-in-business-suit-cooking-food-pop-art-vector-18150511.jpg" width="400" style="display:block;margin-top:50px;width:280px;" border="0" /></a>
+    </div>
+
+    <div id="vid-overlay"></div>
+    <section id="home">
+      <div class="video_shader"></div>
+        <div class="video_contain">
+            
+          <video autoplay muted loop id="myVideo">
+             <source src="tunnel.mov" type="video/mp4">
+          </video>
+        </div>
+    </section>
+ 
+</body>
+</html>
